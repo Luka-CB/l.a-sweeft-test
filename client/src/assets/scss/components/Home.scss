@@ -1,0 +1,29 @@
+.home-container {
+  background-color: $dark;
+  width: 70%;
+  min-height: 100vh;
+  box-shadow: 0 0 10px black;
+  margin: 0 auto;
+
+  .hero {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+
+    h1 {
+      font-size: 3rem;
+      color: $light;
+    }
+
+    p {
+      font-size: 1.9rem;
+      margin-top: 10px;
+      color: $light-trans;
+
+      span {
+        font-size: 2.5rem;
+        color: $light;
+      }
+    }
+  }
+}

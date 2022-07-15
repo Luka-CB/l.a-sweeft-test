@@ -1,0 +1,62 @@
+.add-contact-container {
+  width: 100%;
+
+  #text {
+    color: $light;
+    padding: 10px;
+  }
+
+  .inputs {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    input {
+      width: 45%;
+      border: 1px solid $dark;
+      outline: none;
+      padding: 5px;
+      font-size: 0.9rem;
+      border-radius: 10px;
+      box-shadow: 0 0 8px black;
+      font-family: inherit;
+      background-color: $light-trans;
+      transition: all 0.3s ease-in-out;
+
+      &::placeholder {
+        color: rgba(16, 16, 16, 0.534);
+      }
+
+      &:focus {
+        background-color: $light;
+        box-shadow: 0 0 4px $primary;
+        border-color: $primary-hover;
+      }
+    }
+
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+
+  .add-btn {
+    margin: 20px;
+    width: 100px;
+    font-family: inherit;
+    padding: 3px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid $primary;
+    outline: none;
+    color: $primary-hover;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background-color: $light;
+      font-weight: 600;
+    }
+  }
+}

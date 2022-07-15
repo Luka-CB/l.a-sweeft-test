@@ -1,0 +1,122 @@
+.auth-container {
+  width: 100%;
+  margin-top: 50px;
+
+  h2 {
+    text-align: center;
+    color: $light;
+  }
+
+  form {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 40px;
+
+    #login-error {
+      color: red;
+    }
+
+    .input-box {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+
+      label {
+        padding: 10px;
+        color: $light;
+      }
+
+      .usernameError {
+        border-color: red;
+      }
+      .usernameSuccess {
+        border-color: greenyellow;
+      }
+
+      .passError {
+        border-color: red;
+      }
+      .passSuccess {
+        border-color: greenyellow;
+      }
+
+      .confPassError {
+        border-color: red;
+      }
+      .confPassSuccess {
+        border-color: greenyellow;
+      }
+
+      #err-text {
+        padding: 5px;
+        color: red;
+      }
+
+      input {
+        border: 1px solid $dark;
+        outline: none;
+        padding: 10px;
+        font-size: 1.1rem;
+        border-radius: 10px;
+        box-shadow: 0 0 8px black;
+        font-family: inherit;
+        background-color: $light-trans;
+        transition: all 0.3s ease-in-out;
+
+        &::placeholder {
+          color: rgba(16, 16, 16, 0.534);
+        }
+
+        &:focus {
+          background-color: $light;
+          box-shadow: 0 0 4px $primary;
+          border-color: $primary-hover;
+        }
+      }
+    }
+
+    #auth-btn {
+      border: 1px solid $primary;
+      outline: none;
+      margin-top: 20px;
+      width: 250px;
+      padding: 7px;
+      border-radius: 10px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+      background-color: transparent;
+      color: $primary-hover;
+      font-family: inherit;
+
+      &:hover {
+        background-color: $light;
+        color: $primary-hover;
+        border-color: $primary-hover;
+      }
+    }
+  }
+
+  .info {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    align-items: center;
+
+    p {
+      color: $light;
+      margin-right: 10px;
+    }
+
+    h2 {
+      text-decoration: underline;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        color: $light-trans;
+      }
+    }
+  }
+}

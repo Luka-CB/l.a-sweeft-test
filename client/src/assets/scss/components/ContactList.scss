@@ -1,0 +1,82 @@
+.contact-list-container {
+  width: 100%;
+  padding: 20px;
+
+  .list {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 40px;
+
+    .contact-info {
+      box-shadow: 0 0 15px rgb(1, 15, 25);
+      background-color: $light-trans;
+      padding: 10px;
+      display: flex;
+      width: 90%;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 10px;
+      transition: all 0.2s ease-in-out;
+
+      .name {
+        text-transform: capitalize;
+      }
+
+      .number {
+        letter-spacing: 1px;
+      }
+
+      .phone-icon {
+        border: 2px solid $primary-hover;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        border-radius: 10px;
+        color: rgb(6, 77, 8);
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          background-color: transparent;
+          color: $primary;
+        }
+      }
+
+      &:hover {
+        background-color: $light;
+      }
+    }
+
+    .config {
+      margin-left: 10px;
+      flex: 1;
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.2rem;
+
+      .fa-pencil {
+        color: bisque;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          color: rgb(164, 146, 124);
+        }
+      }
+
+      .fa-rectangle-xmark {
+        color: rgb(249, 53, 53);
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          color: rgb(150, 32, 32);
+        }
+      }
+    }
+  }
+}

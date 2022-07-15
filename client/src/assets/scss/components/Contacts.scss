@@ -1,0 +1,54 @@
+.contacts-container {
+  width: 100%;
+  margin: 20px auto;
+  position: relative;
+
+  .header {
+    background-color: $bg-color;
+    box-shadow: 0 0 12px black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    .user-info {
+      display: flex;
+      align-items: center;
+
+      .user-name {
+        margin-right: 20px;
+        color: $light;
+        letter-spacing: 3px;
+        font-weight: 400;
+      }
+
+      .logout {
+        color: $light-trans;
+        text-decoration: underline;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          color: $light-hover;
+        }
+      }
+    }
+  }
+
+  .body {
+    background-color: $dark;
+    width: 50%;
+    min-width: 650px;
+    margin: 0 auto;
+    margin-top: 20px;
+    box-shadow: 0 0 8px black;
+    padding: 10px;
+    min-height: 70vh;
+
+    #no-contact {
+      position: relative;
+      left: 45%;
+      top: 40vh;
+      color: $light-trans;
+    }
+  }
+}
