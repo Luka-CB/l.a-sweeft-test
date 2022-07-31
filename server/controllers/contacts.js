@@ -7,6 +7,7 @@ const addContact = async (req, res) => {
     const newContact = await Contact.create({
       name,
       number,
+      creator: req.user._id,
     });
 
     if (!newContact) throw new Error("Something went wrong!");
@@ -30,7 +31,10 @@ const getContacts = async (req, res) => {
     : {};
 
   try {
-    const contacts = await Contact.find({ ...keyword }).sort({
+    const contacts = await Contact.find({
+      creator: req.user._id,
+      ...keyword,
+    }).sort({
       createdAt: "desc",
     });
 
